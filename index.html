@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>שבושון 2</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="ספר לנו איזה סלבס אתה מכיר ונספר לך איזה ישיבה/מכינה מתאימה לך">
+    <meta property="og:image" itemprop="image" content="https://raw.githubusercontent.com/shvushon/shvushon2/main/shvushon2.jpg">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6237758822768031"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/shvushon/shvushon2/main/favicon.ico">
+</head>
+<body>
+    <div class="all-site">
+
+
+    <!-- Start Section -->
+    <div class="start-section section">
+        <header class="sub-header">
+            <h1>שבושון 2</h1>
+        </header>
+        <div class="section-padding">
+            <h2>לכל ידידי "שבושון" היקרים.</h2>
+            <p>אם אתם ביינישים/מכיניסטים בהווה/בעבר - נשמח לעזרתכם.</p>
+            <p>אנחנו מכינים אתר שבו שבושים יוכלו להכניס מושגים והוא יאמר להם איזו ישיבה/מכינה מתאימה להם.</p>
+            <p>בעבור זה אנחנו צריכים את עזרתכם - כרגע האתר בהקמה ונשמח שתכניסו את המושגים שאתם מכירים.</p>  
+            <br>
+            <button class="link-styling" id="student" onclick="openBeynishStartSection()">
+                כאן מתחילים את כל הכיף
+            </button>
+        </div>
+    </div>
+
+    <div class="beynish-start-section section">
+
+        <header class="sub-header">
+            <h1>שבושון 2</h1>
+        </header>
+
+        <h3>בייניש/מכיניסט יקר, לפני שנתחיל בשאלון:</h3>
+
+        <div class="beynish-form">
+            <label for="yeshiva">באיזה מוסד אתה לומד?</label>
+            <div class="autocomplete">
+                <input id="autocomplete-input" 
+                type="text" name="yeshiva" autocomplete="off" 
+                placeholder="התחל לכתוב ובחר מוסד מהרשימה..."
+                required>
+            </div>
+
+            <label for="shioor">איזה שיעור אתה?</label>
+            <select name="shioor" id="shioor" required>
+                <option value="" disabled selected hidden>בחר מהרשימה</option>
+                <option value="0">א'</option>
+                <option value="1">ב'</option>
+                <option value="1">ג'</option>
+                <option value="1">ד'</option>
+                <option value="1">ה'</option>
+                <option value="1">ו' ומעלה (גם בוגרים)</option>
+            </select>
+
+            <div class="beynish-btns">
+                <button onclick="validateForm()" 
+                class="button-styling beynish-start-btn">
+                התחל!
+            </button>
+        </div>
+    </div>
+    </div>
+
+    <!-- Concepts Section -->
+    <main class="concepts-section section">
+
+        <header class="sub-header">
+        <h1>שבושון 2</h1>
+        <h4>בחר את המושגים שאתה מכיר</h4>
+        </header>
+
+        <div class="concepts-container">
+            <button class="concept">אנדרו טייט</button>
+            <button class="concept">אקטיניום</button>
+            <button class="concept">בוג'אק הורסמן</button>
+            <button class="concept">ברוך שפינוזה</button>
+            <button class="concept">גוסטינג</button>
+            <button class="concept">דואה ליפה</button>
+            <button class="concept">דיאלקטיקה</button>
+            <button class="concept">דיוויד שווימר</button>
+            <button class="concept">האדמו"ר הרש"ב</button>
+            <button class="concept">האנס זימר</button>
+            <button class="concept">הרב אילעאי עופרן</button>
+            <button class="concept">הרב אליעזר איגרא</button>
+            <button class="concept">הרב אמנון בזק</button>
+            <button class="concept">הרב מרדכי שטרנברג</button>
+            <button class="concept">הרב שאול ישראלי</button>
+            <button class="concept">וולטר וייט</button>
+            <button class="concept">ז'אן פול סארטר</button>
+            <button class="concept">זופניק</button>
+            <button class="concept">חבורת תרי"ג</button>
+            <button class="concept">טראש טוק</button>
+            <button class="concept">יובל עילם</button>
+            <button class="concept">יוני בלוך</button>
+            <button class="concept">ישעיהו ליבוביץ</button>
+            <button class="concept">כריסטופר נולאן</button>
+            <button class="concept">לודוויג וינגשטיין</button>
+            <button class="concept">לוט"ר</button>
+            <button class="concept">ליהיא גרינר</button>
+            <button class="concept">לינוס טורבאלדס</button>
+            <button class="concept">ליקוטי אמרים</button>
+            <button class="concept">מייק ווילר</button>
+            <button class="concept">מלכות וקסברג</button>
+            <button class="concept">מרטין לותר קינג</button>
+            <button class="concept">ניהיליזם</button>
+            <button class="concept">סאול ניגס</button>
+            <button class="concept">ספטום</button>
+            <button class="concept">עובד לדיז'נסקי</button>
+            <button class="concept">עומר דרור</button>
+            <button class="concept">עומרי גליקמן</button>
+            <button class="concept">עומרי חיון</button>
+            <button class="concept">עמוס חכם</button>
+            <button class="concept">פאסיב אגרסיב</button>
+            <button class="concept">פוסטמודרניזם</button>
+            <button class="concept">פיט דייווידסון</button>
+            <button class="concept">פיט סמפראס</button>
+            <button class="concept">פלחה"ן</button>
+            <button class="concept">פרונט ליבר</button>
+            <button class="concept">פרנץ פרדיננד</button>
+            <button class="concept">צוקו</button>
+            <button class="concept">קווין ספייסי</button>
+            <button class="concept">קול הלשון</button>
+            <button class="concept">קים דיל</button>
+            <button class="concept">קים קרדשיאן</button>
+            <button class="concept">קלייד דרקסלר</button>
+            <button class="concept">קרל פרידריך גאוס</button>
+            <button class="concept">ר' זרחיה הלוי</button>
+            <button class="concept">ר' שמעון שקאפ</button>
+            <button class="concept">רגרסיה</button>
+            <button class="concept">רצוא ושוב</button>
+            <button class="concept">תולדות אברהם יצחק</button>
+            <button class="concept">תום באום</button>
+            <button class="concept">תקבולת כיאסטית</button>
+
+
+        </div>
+
+        <button class="submit-concepts button-styling" onclick="submitConcepts()">שלח</button>
+        
+    </main>
+
+    <!-- Result Section -->
+
+    <div class="result-section section">
+        <h2>תודה רבה יא גבר, נתראה בקרוב</h2>
+        
+        <div class="links-box">
+            <a href="#"
+            class="link-styling whatsapp-link" target="_blank">
+            <i class="fa fa-whatsapp" style="font-size:36px;color:green"></i>
+            <br>
+            שתף בוואצפ
+            </a>
+            <a href="https://shvushon.github.io/shvushon" class="link-styling">
+                <img width="36px" height="30.86px" src="https://shvushon.github.io/shvushon/favicon.ico">
+                <br>
+                נסה את שבושון 1
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="loader-container">
+    <div class="loader-circle" hidden></div>
+    <div class="loader-line" hidden>
+        <div class="loader-clock" hidden></div>
+    </div>
+    <div class="loader-text" hidden>רק רגע אנחנו צריכים לעכל את כל המידע הזה...</div>
+  </div>
+  <div class="dark-screen" hidden></div>
+    <script type="module" src="code.js"></script>
+</body>
+</html>
