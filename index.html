@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:description" content="איזו ישיבה/מכינה מתאימה לך?">
+    <meta property="og:description" content="ספר לנו איזה סלבס אתה מכיר ונספר לך איזה ישיבה/מכינה מתאימה לך">
     <meta property="og:image" itemprop="image" content="https://raw.githubusercontent.com/shvushon/shvushon2/main/shvushon2.jpg">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6237758822768031"
@@ -18,25 +18,38 @@
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/shvushon/shvushon2/main/favicon.ico">
 </head>
 <body>
-    <div class="all-site">
+<div class="all-site">
 
 
     <!-- Start Section -->
     <div class="start-section section">
-        <header class="sub-header">
-            <h1>שבושון 2</h1>
+        <header>
+            <header class="sub-header">
+                <h1>שבושון 2</h1>
+            </header>
+            <div class="section-padding">
+                <p><b>שמיניסט מבולבל, בייניש/מכיניסט סקרן או סתם איזו אחת שבאה לבדוק איפה כדאי לה לחפש שידוך</b></p>
+                <h2>ספרו לנו איזה מושגים אתם מכירים ונאמר לכם לאיזו ישיבה או מכינה אתם שייכים</h2>            
+                <p>במסך הבא נציג בפניכם רשימת דמויות ומושגים. בחרו את אלה שאתם מכירים ואנחנו נציג לכם אילו ישיבות או מכינות מתאימות לכם על סמך בחירותיכם.</p>
+                <h3>
+                    <span class="bigger-greener">שבוש יקר</span>,
+                    <br>
+                    רוצה לדעת באיזו ישיבה או מכינה כדאי לך לבדוק?
+                </h3>
+                <button class="link-styling" id="shvush" onclick="openConceptsSection()">
+                    לחץ כאן!
+                </button>
+                
+                <h3>
+                    <span class="bigger-greener">בייניש</span> או <span class="bigger-greener">מכיניסט</span>,
+                    <br>
+                    רוצה לדעת אם בחרת נכון (ולעזור לנו בשיפור המידע)?
+                </h3>
+                <button class="link-styling" id="student" onclick="openBeynishStartSection()">
+                    לחץ כאן!
+                </button>
+            </div>
         </header>
-        <div class="section-padding">
-            <h2>לכל ידידי "שבושון" היקרים.</h2>
-            <p>אם אתם ביינישים/מכיניסטים בהווה/בעבר - נשמח לעזרתכם.</p>
-            <p>אנחנו מכינים אתר שבו שבושים יוכלו להכניס מושגים והוא יאמר להם איזו ישיבה/מכינה מתאימה להם.</p>
-            <p>בעבור זה אנחנו צריכים את עזרתכם - כרגע האתר בהקמה ונשמח שתכניסו את המושגים שאתם מכירים.</p>  
-            <br>
-            <button class="link-styling" id="student" onclick="openBeynishStartSection()">
-                כאן מתחילים את כל הכיף
-            </button><br>
-            <p id=onlyonce hidden>לדאבוננו (הרב) אפשר למלא רק פעם אחת מכל מכשיר, אבל תודה על העזרה!</p>
-        </div>
     </div>
 
     <div class="beynish-start-section section">
@@ -68,12 +81,11 @@
             </select>
 
             <div class="beynish-btns">
+                <button class="link-styling" onclick="openStartSection()">התבלבלתי אני בכלל לא <br> בייניש או מכיניסט בכלל</button>
                 <button onclick="validateForm()" 
                 class="button-styling beynish-start-btn">
                 התחל!
             </button>
-            
-            <p>נתקלתם בבעיה? המייל שלנו: shvushon@gmail.com</p>
         </div>
     </div>
     </div>
@@ -159,22 +171,49 @@
     <!-- Result Section -->
 
     <div class="result-section section">
-        <h2>תודה רבה יא גבר, נתראה בקרוב</h2>
-        
-        <div class="links-box">
-            <a href="#"
-            class="link-styling whatsapp-link" target="_blank">
-            <i class="fa fa-whatsapp" style="font-size:36px;color:green"></i>
-            <br>
-            שתף בוואצפ
-            </a>
-            <a href="https://shvushon.github.io/shvushon" class="link-styling">
-                <img width="36px" height="30.86px" src="https://shvushon.github.io/shvushon/favicon.ico">
+        <header class="sub-header">
+            <h1>שבושון 2</h1>
+        </header>
+        <h2 id="smartass"></h2>
+        <div class="section-padding" id="result-section">
+            <h1 class="smallerH1">הישיבות המומלצות עבורך הן:</h1>
+            <h2 id="res1"></h2>
+            <h2 id="res2"></h2>
+            <h2 id="res3"></h2>
+            <h1 id="percentage" hidden class="smallerH1">אחוזי ההתאמה לישיבתך הקדושה הם: </h1>
+            <button class="start-over button-styling" onclick="openConceptsSection()">
+                התחל מחדש
+            </button>
+            <div class="links-box">
+                <a
+                onclick="sendResultViaWhatsapp()"
+                class="link-styling whatsapp-link" target="_blank">
+                <i class="fa fa-whatsapp" style="font-size:36px;color:green"></i>
                 <br>
-                נסה את שבושון 1
-            </a>
+                שתף את התוצאות בוואצפ
+                </a>
+                <a href="https://shvushon.github.io/shvushon" class="link-styling">
+                    <img width="36px" height="30.86px" src="https://shvushon.github.io/shvushon/favicon.ico">
+                    <br>
+                    נסה את שבושון 1
+                </a>
+                <a href="https://shvushon.github.io/shlichim" class="link-styling">
+                    <img width="36px" height="30.86px" src="https://shvushon.github.io/shlichim/favicon.jpg">
+                    <br>
+                    שליחון - שליחים לחוד"א
+                </a>
+            </div>
+            <p>
+                <b>יוצרים:</b>
+                <br>
+                נתאי קסנר
+                <br>
+                נדב אילני
+                <br>
+                אייל הלמון
+
+            </p>
         </div>
-        <p>כאן יוצרים איתנו קשר: shvushon@gmail.com</p>
     </div>
 
 </div>
@@ -184,9 +223,9 @@
     <div class="loader-line" hidden>
         <div class="loader-clock" hidden></div>
     </div>
-    <div class="loader-text" hidden>רק רגע אנחנו צריכים לעכל את כל המידע הזה...</div>
+    <div class="loader-text" hidden>מערכת שבושון מתאימה לך ישיבה או מכינה, אנא המתן...</div>
   </div>
   <div class="dark-screen" hidden></div>
-  <script type="module" src="pilot-ugly.js"></script>
+    <script type="module" src="ugly-code.js"></script>
 </body>
 </html>
